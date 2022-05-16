@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet"/>
+
+    <title>Document</title>
+</head>
+<body>
+<br><br>
+    <form action="">
+        <div class="form_Item">
+            <div>
+                <label for="name">Názov filmu:</label><br>
+                <input type="text" name="name" id="name" placeholder="Zadajte názov filmu">
+            </div>
+
+            <div>
+                <label for="zaner">Žáner:</label><br>
+                <select type="text" name="genre" id="zaner" placeholder="Zadajte meno herca">
+                    <option>Akčný</option>
+                    <option>Komédia</option>
+                    <option>Romantický</option>
+                    <option>Sci-Fi</option>
+                    <option>Dráma</option>
+                    <option>Dobrodružný</option>
+                    <option>Vojnový</option>
+                    <option>Krimi</option>
+                    <option>Horor</option>
+                    <option>Dokumentárny</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form_Item">
+            <div>
+                <label for="Rok">Rok vydania:</label><br>
+                <input type="text" name="year" id="rok" placeholder="2012">
+                
+            </div>
+
+            <div>
+                <label for="herci">Herci:</label>
+                <input type="text" id="herci" name="date" placeholder="Angelina Jolie, Brad Pitt, ...">
+            </div>
+        </div>
+
+
+        <div class="tlačidla">
+            <button type="button" onclick="klikloSaTlacitko(event)">
+                &#10010 Vložiť
+            </button>
+
+            <button type="button" onclick="klikloSaOdstranenie(event)">
+                &#9472 Odstrániť posledný film
+            </button>
+
+            <button type="button" onclick="klikloSaNaReset(event)">
+                <span style='color: #b0100a; font-weight: bold;'>&#10008;</span>
+                Vymazať celý zoznam
+            </button>
+        </div>
+
+    </form>
+    <br><br>
+
+    <div id="container" class="list">
+
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
